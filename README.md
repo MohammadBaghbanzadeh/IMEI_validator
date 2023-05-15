@@ -17,11 +17,11 @@ IMEI(imei).check() # Output: THIS IS A VALID IMEI.
 IMEI(imeisv).check() # Output: THIS IS A VALID IMEISV.
 ```
 ## Methodology
-The constructor accepts the number as input and calls the check() method.
-The check() method checks the length of the number and calls either IMEI_validator() or IMEISV_validator() based on the length.
-The IMEI_validator() method checks the validity of the IMEI number using the Luhn algorithm.
-The IMEISV_validator() method checks the validity of the IMEISV number by validating the Reporting Body Identifier (RBI) and Serial Number fields.
-The luhn_algorithm() is used for the Luhn checksum calculation and returns the check digit.
+* The constructor accepts the number as input and calls the check() method.
+* The check() method checks the length of the number and calls either IMEI_validator() or IMEISV_validator() based on the length.
+* The IMEI_validator() method checks the validity of the IMEI number using the Luhn algorithm.
+* The IMEISV_validator() method checks the validity of the IMEISV number by validating the Reporting Body Identifier (RBI) and Serial Number fields.
+* The luhn_algorithm() is used for the Luhn checksum calculation and returns the check digit.
 ## Limitations
-This script only checks the validity of the given number, it does not determine whether the device with the given number actually exists or is in use.
-The RBI list is limited to those observed in 2021. It's possible that new RBIs have been added since then.
+* This script only checks the validity of the given number, it does not determine whether the device with the given number actually exists or is in use.
+* The RBI list is limited to those observed in 2021. It's possible that new RBIs have been added since then.

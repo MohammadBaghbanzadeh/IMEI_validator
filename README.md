@@ -6,7 +6,7 @@ Clone the repo or download the script 'imei_validator.py'
 Import the class IMEI from the script.
 Create an instance of IMEI by passing the 15- or 16-digit number as argument.
 The check() method will validate the number and print whether it's a valid IMEI or IMEISV.
-python
+
 ```
 from imei_validator import IMEI
 
